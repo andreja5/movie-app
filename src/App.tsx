@@ -16,13 +16,11 @@ function App() {
     }, [])
 
     const getMovies = (API: string): void => {
-        if (API) {
-            fetch(API)
-                .then(res => res.json())
-                .then(data => {
-                    setMovies(data.results)
-                })
-        }
+        fetch(API)
+            .then(res => res.json())
+            .then(data => {
+                setMovies(data.results)
+            })
     }
 
     const updateMovies = (searchTerm: string): void => {
