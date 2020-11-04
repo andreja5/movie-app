@@ -1,0 +1,7 @@
+.movie-container {
+  background-color: #22254b;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
